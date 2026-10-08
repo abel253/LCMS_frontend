@@ -1,26 +1,21 @@
 <template>
-  <div class="min-h-screen flex flex-col bg-slate-50 selection:bg-primary-100 selection:text-primary-700">
-    <!-- Header ስሙን LayoutAppHeader ብለው ይጠሩት -->
+  <div class="min-h-screen flex flex-col bg-white">
     <LayoutAppHeader />
-    
     <main class="flex-grow">
-      <!-- እዚህ ጋር Transition ብንጨምርበት ገጾቹ ሲቀያየሩ ያምራል -->
       <slot />
     </main>
-
     <LayoutAppFooter />
   </div>
 </template>
 
 <style>
-/* ለአጠቃላይ ገጹ ለስላሳ ሽግግር */
-.page-enter-active,
-.page-leave-active {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+.page-enter-active, .page-leave-active {
   transition: all 0.3s;
 }
-.page-enter-from,
-.page-leave-to {
+.page-enter-from, .page-leave-to {
   opacity: 0;
-  filter: blur(1rem);
+  filter: blur(0.5rem);
 }
 </style>
