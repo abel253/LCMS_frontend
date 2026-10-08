@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-primary-700 text-white mt-auto">
+  <footer class="bg-[#01ACF2] text-[#0B2545] mt-auto">
     <div class="container-custom py-12 lg:py-16">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
         <!-- Brand -->
@@ -11,21 +11,21 @@
               </div>
             </div>
             <div>
-              <h3 class="text-lg font-bold text-white leading-tight">Mekdela Amba University</h3>
-              <span class="text-sm text-primary-200">መቅደላ አምባ ዩኒቨርሲቲ</span>
+              <h3 class="text-lg font-bold text-[#0B2545] leading-tight">Mekdela Amba University</h3>
+              <span class="text-sm text-[#0B2545]/80">መቅደላ አምባ ዩኒቨርሲቲ</span>
             </div>
           </div>
-          <p class="text-primary-200/80 text-sm leading-relaxed mt-3">
+          <p class="text-[#0B2545]/85 text-sm leading-relaxed mt-3">
             Nurturing competent graduates, generating impactful research, and serving society for a brighter tomorrow.
           </p>
         </div>
 
         <!-- Quick Links -->
         <div>
-          <h4 class="text-base font-semibold mb-4 text-gold-400">Quick Links</h4>
+          <h4 class="text-base font-semibold mb-4 text-[#0B2545]">Quick Links</h4>
           <div class="grid grid-cols-2 gap-x-4 gap-y-2">
             <NuxtLink v-for="link in quickLinks" :key="link.path" :to="link.path"
-              class="text-primary-200/80 hover:text-white text-sm transition-colors duration-200 hover:translate-x-1 transform inline-block">
+              class="text-[#0B2545]/80 hover:text-[#ffffff] text-sm transition-colors duration-200 hover:translate-x-1 transform inline-block">
               {{ link.label }}
             </NuxtLink>
           </div>
@@ -33,21 +33,21 @@
 
         <!-- Contact Information -->
         <div>
-          <h4 class="text-base font-semibold mb-4 text-gold-400">Contact Information</h4>
+          <h4 class="text-base font-semibold mb-4 text-[#0B2545]">Contact Information</h4>
           <ul class="space-y-3 text-sm">
-            <li class="flex items-start gap-2 text-primary-200/80">
+            <li class="flex items-start gap-2 text-[#0B2545]/85">
               <span class="mt-0.5">📍</span>
               <span>Mekdela, Ethiopia</span>
             </li>
-            <li class="flex items-start gap-2 text-primary-200/80">
+            <li class="flex items-start gap-2 text-[#0B2545]/85">
               <span class="mt-0.5">📞</span>
               <span>+251 123 456 789</span>
             </li>
-            <li class="flex items-start gap-2 text-primary-200/80">
+            <li class="flex items-start gap-2 text-[#0B2545]/85">
               <span class="mt-0.5">✉️</span>
               <a href="mailto:info@mau.edu.et" class="hover:text-white transition-colors">info@mau.edu.et</a>
             </li>
-            <li class="flex items-start gap-2 text-primary-200/80">
+            <li class="flex items-start gap-2 text-[#0B2545]/85">
               <span class="mt-0.5">🌐</span>
               <a href="#" class="hover:text-white transition-colors">www.mau.edu.et</a>
             </li>
@@ -56,7 +56,7 @@
 
         <!-- Follow Us -->
         <div>
-          <h4 class="text-base font-semibold mb-4 text-gold-400">Follow Us</h4>
+          <h4 class="text-base font-semibold mb-4 text-[#0B2545]">Follow Us</h4>
           <div class="flex items-center gap-3">
             <!-- Facebook -->
             <a href="#" class="w-10 h-10 rounded-full bg-white/10 hover:bg-blue-600 flex items-center justify-center transition-all duration-300 hover:scale-110">
@@ -80,18 +80,18 @@
     </div>
 
     <!-- Bottom Bar -->
-    <div class="bg-primary-800/50 border-t border-white/10">
+    <div class="bg-[#0197d8] border-t border-white/20">
       <div class="container-custom py-4 flex flex-col md:flex-row items-center justify-between gap-3">
-        <div class="flex flex-wrap items-center gap-2 text-xs text-primary-300">
+        <div class="flex flex-wrap items-center gap-2 text-xs text-[#EAF9FF]">
           <span>© {{ new Date().getFullYear() }} Mekdela Amba University. All Rights Reserved.</span>
-          <span class="hidden md:inline">|</span>
+          <span class="hidden md:inline text-[#EAF9FF]">|</span>
           <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
           <span>|</span>
           <a href="#" class="hover:text-white transition-colors">Terms of Use</a>
           <span>|</span>
           <a href="#" class="hover:text-white transition-colors">Sitemap</a>
         </div>
-        <p class="text-sm italic text-gold-400/80 font-medium">"Knowledge for a better society"</p>
+        <p class="text-sm italic text-[#EAF9FF] font-medium">"Knowledge for a better society"</p>
       </div>
     </div>
   </footer>

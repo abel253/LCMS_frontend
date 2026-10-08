@@ -1,7 +1,7 @@
 <template>
-  <div class="min-h-screen flex flex-col bg-white">
+  <div class="min-h-screen flex flex-col bg-[#EAF9FF]">
     <LayoutAppHeader />
-    <main class="flex-grow">
+    <main class="flex-grow bg-[#EAF9FF]">
       <slot />
     </main>
     <LayoutAppFooter />
