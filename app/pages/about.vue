@@ -1,111 +1,156 @@
 <template>
-  <div class="about-page bg-[#EAF9FF]">
-    <!-- Hero Section with Background Image -->
-    <section class="hero-section relative py-24 overflow-hidden border-b border-[#01ACF2]">
-      <div class="container-custom text-center text-[#0B2545] relative z-10">
-        <span class="inline-block bg-[#01ACF2] text-white px-4 py-1 rounded-full text-sm font-semibold mb-4 border border-[#01ACF2] backdrop-blur-sm">
-          Established 2018
-        </span>
-        <h1 class="text-5xl md:text-6xl font-bold text-[#0B2545]">
-          Excellence in <span class="text-[#2f7bc1]">Knowledge</span>
-        </h1>
-        <p class="text-[#234d77] mt-4 max-w-2xl mx-auto text-lg">
-          Discover the heart of Mekdela Amba University's academic research and digital innovation.
-        </p>
+  <div class="bg-[#EAF9FF] text-[#12334D]">
+    <section class="about-hero relative flex min-h-[300px] items-center overflow-hidden sm:min-h-[340px] lg:min-h-[390px]">
+      <div class="absolute inset-0 bg-gradient-to-r from-[#062C4B]/95 via-[#063B61]/80 to-[#063B61]/20"></div>
+      <div class="container-custom relative z-10 py-10 sm:py-12">
+        <div class="max-w-2xl">
+          <p class="mb-2 text-xs font-bold uppercase tracking-[0.16em] text-[#FFD166] sm:text-sm">
+            Mekdela Amba University
+          </p>
+          <h1 class="font-serif text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
+            About <span class="text-[#FFD166]">Mekdela Amba University</span>
+          </h1>
+          <h2 class="mt-3 text-base font-bold leading-snug text-[#FFD166] sm:text-lg lg:text-xl">
+            Excellence in Education, Research, Innovation and Service to Society
+          </h2>
+          <p class="mt-3 max-w-xl text-sm leading-relaxed text-white/90 sm:text-base">
+            We are a center of academic excellence, committed to nurturing competent graduates,
+            advancing impactful research, and serving society for a brighter, more prosperous Ethiopia.
+          </p>
+          <div class="mt-5 flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:gap-3">
+            <NuxtLink
+              to="/search"
+              class="inline-flex items-center justify-center gap-2 rounded-lg bg-[#FFD166] px-5 py-2.5 text-sm font-bold text-[#12334D] shadow-lg transition hover:bg-[#FFE19A] sm:w-auto"
+            >
+              Explore the Library <span aria-hidden="true">→</span>
+            </NuxtLink>
+            <NuxtLink
+              to="/research"
+              class="inline-flex items-center justify-center gap-2 rounded-lg border border-white/80 px-5 py-2.5 text-sm font-bold text-white transition hover:bg-white hover:text-[#12334D] sm:w-auto"
+            >
+              Discover Our Research <span aria-hidden="true">→</span>
+            </NuxtLink>
+          </div>
+        </div>
+      </div>
+      <p class="absolute bottom-5 right-6 z-10 hidden font-serif text-lg italic text-white/90 md:block">
+        Brighter Minds, Stronger Ethiopia
+      </p>
+    </section>
+
+    <section class="container-custom py-9 sm:py-11 lg:py-12">
+      <div class="grid items-center gap-6 lg:grid-cols-[1fr_1.1fr] lg:gap-8">
+        <div>
+          <div class="mb-2 flex items-center gap-2">
+            <span class="h-1 w-8 rounded-full bg-[#01ACF2]"></span>
+            <span class="text-xs font-bold uppercase tracking-widest text-[#1478A5]">Who We Are</span>
+          </div>
+          <h2 class="font-serif text-2xl font-bold text-[#103B5C] sm:text-3xl">
+            University <span class="text-[#01ACF2]">Overview</span>
+          </h2>
+          <p class="mt-3 text-sm leading-relaxed text-[#36566D] sm:text-base">
+            Mekdela Amba University is dedicated to expanding access to quality higher education and
+            contributing to sustainable development in Ethiopia. Through excellent teaching,
+            meaningful research, and strong community partnerships, we prepare graduates to make a
+            positive difference.
+          </p>
+          <p class="mt-3 text-sm leading-relaxed text-[#36566D] sm:text-base">
+            Our university community values knowledge, innovation, integrity, and service. We continue
+            to grow our academic programs and learning resources to meet the needs of students and society.
+          </p>
+          <NuxtLink
+            to="/"
+            class="mt-5 inline-flex items-center justify-center gap-2 rounded-lg bg-[#01ACF2] px-5 py-2.5 text-sm font-bold text-white shadow-md transition hover:bg-[#078BC3]"
+          >
+            Learn More About MAU <span aria-hidden="true">→</span>
+          </NuxtLink>
+        </div>
+        <div class="relative">
+          <img
+            :src="campusImage"
+            alt="Students studying in the Mekdela Amba University library"
+            class="h-56 w-full rounded-xl object-cover shadow-xl sm:h-72 lg:h-[340px]"
+          />
+          <div class="absolute -bottom-4 -left-4 hidden h-24 w-24 rounded-2xl border-4 border-[#01ACF2] bg-white/80 lg:block"></div>
+        </div>
       </div>
     </section>
 
-    <div class="container-custom py-16">
-      <!-- Mission & Vision -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-        <div class="bg-[#EAF9FF] p-8 rounded-2xl shadow-sm border-2 border-[#01ACF2] text-center">
-          <div class="text-5xl mb-4">🎯</div>
-          <h3 class="text-2xl font-bold text-[#0B2545] mb-3">Our Mission</h3>
-          <p class="text-[#234d77] leading-relaxed">
-            To provide high-quality information resources, expert instructions, and innovative services 
-            that support the research and learning needs of the Mekdela Amba University community.
-          </p>
-        </div>
-        <div class="bg-[#EAF9FF] p-8 rounded-2xl shadow-sm border-2 border-[#01ACF2] text-center">
-          <div class="text-5xl mb-4">👁️</div>
-          <h3 class="text-2xl font-bold text-[#0B2545] mb-3">Our Vision</h3>
-          <p class="text-[#234d77] leading-relaxed">
-            To be a premier digital academic library in Ethiopia, recognized globally for excellence 
-            in information delivery, research support, and preserving academic heritage.
-          </p>
-        </div>
-      </div>
-
-      <!-- Split Section -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
-        <div class="rounded-2xl overflow-hidden shadow-2xl border-4 border-[#01ACF2]">
-          <img :src="heroImage " alt="Library Interior" class="w-full h-80 object-cover hover:scale-105 transition-transform duration-700" />
-        </div>
-        <div>
-          <span class="text-[#2f7bc1] font-semibold text-sm uppercase tracking-wider">Library Impact</span>
-          <h2 class="text-3xl font-bold text-[#0B2545] mt-2">
-            More Than Just <span class="text-[#2f7bc1]">Books</span>
+    <section class="border-y border-[#C8EAF8] bg-white/70 py-9 sm:py-11">
+      <div class="container-custom">
+        <div class="mb-6 text-center sm:mb-7">
+          <p class="text-xs font-bold uppercase tracking-[0.18em] text-[#1478A5]">Our Purpose</p>
+          <h2 class="mt-2 font-serif text-2xl font-bold text-[#103B5C] sm:text-3xl">
+            What Guides <span class="text-[#01ACF2]">Us</span>
           </h2>
-          <p class="text-[#234d77] mt-4 leading-relaxed">
-            Our library serves as a dynamic hub for collaboration. With over 12,000 physical volumes 
-            and access to millions of digital journals, we empower students to transcend boundaries.
+        </div>
+        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <article
+            v-for="item in purposeCards"
+            :key="item.title"
+            class="rounded-xl border-t-4 border-[#01ACF2] border-x border-b border-[#C8EAF8] bg-[#F5FCFF] p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg sm:p-6"
+          >
+            <div class="mb-3 flex h-11 w-11 items-center justify-center rounded-full bg-[#01ACF2] text-xl text-white sm:h-12 sm:w-12">
+              {{ item.icon }}
+            </div>
+            <h3 class="font-serif text-lg font-bold text-[#103B5C]">{{ item.title }}</h3>
+            <p class="mt-2 text-sm leading-relaxed text-[#45647A]">{{ item.description }}</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-custom py-9 sm:py-11">
+      <div class="grid gap-5 rounded-xl bg-[#0B3D60] p-5 text-white shadow-xl sm:p-7 md:grid-cols-[1fr_auto] md:items-center">
+        <div>
+          <p class="text-xs font-bold uppercase tracking-[0.16em] text-[#7DDBFF] sm:text-sm">Learn, discover, contribute</p>
+          <h2 class="mt-2 font-serif text-xl font-bold sm:text-2xl">
+            Be part of a community shaping a brighter future.
+          </h2>
+          <p class="mt-2 max-w-2xl text-sm leading-relaxed text-white/80 sm:text-base">
+            Explore the resources, research, and learning opportunities available through Mekdela Amba University.
           </p>
-          <div class="grid grid-cols-2 gap-4 mt-6">
-            <div class="bg-[#EAF9FF] rounded-lg p-4 text-center border border-[#01ACF2]">
-              <div class="text-2xl font-bold text-[#1b4f82]">2000+</div>
-              <div class="text-sm text-[#234d77]">E-Journals</div>
-            </div>
-            <div class="bg-[#EAF9FF] rounded-lg p-4 text-center border border-[#01ACF2]">
-              <div class="text-2xl font-bold text-[#1b4f82]">24/7</div>
-              <div class="text-sm text-[#234d77]">Digital Access</div>
-            </div>
-          </div>
         </div>
+        <NuxtLink
+          to="/search"
+          class="inline-flex items-center justify-center gap-2 rounded-lg bg-[#FFD166] px-5 py-2.5 text-sm font-bold text-[#12334D] transition hover:bg-[#FFE19A] md:whitespace-nowrap"
+        >
+          Explore Resources <span aria-hidden="true">→</span>
+        </NuxtLink>
       </div>
-
-      <!-- Core Values -->
-      <div class="mb-16">
-        <h2 class="text-3xl font-bold text-center text-[#0B2545] mb-10">
-          Our Core <span class="text-[#2f7bc1]">Values</span>
-        </h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div class="bg-[#EAF9FF] p-6 rounded-2xl shadow-sm border border-[#01ACF2] text-center hover:-translate-y-1 transition-transform">
-            <div class="w-16 h-16 bg-[#EAF9FF] rounded-xl flex items-center justify-center mx-auto mb-4 text-3xl">⚖️</div>
-            <h4 class="text-xl font-bold text-[#0B2545]">Integrity</h4>
-            <p class="text-[#234d77] text-sm mt-2">Maintaining the highest standards of academic honesty.</p>
-          </div>
-          <div class="bg-[#EAF9FF] p-6 rounded-2xl shadow-sm border border-[#01ACF2] text-center hover:-translate-y-1 transition-transform">
-            <div class="w-16 h-16 bg-[#EAF9FF] rounded-xl flex items-center justify-center mx-auto mb-4 text-3xl">♿</div>
-            <h4 class="text-xl font-bold text-[#0B2545]">Accessibility</h4>
-            <p class="text-[#234d77] text-sm mt-2">Ensuring knowledge is available to every student.</p>
-          </div>
-          <div class="bg-[#EAF9FF] p-6 rounded-2xl shadow-sm border border-[#01ACF2] text-center hover:-translate-y-1 transition-transform">
-            <div class="w-16 h-16 bg-[#EAF9FF] rounded-xl flex items-center justify-center mx-auto mb-4 text-3xl">💡</div>
-            <h4 class="text-xl font-bold text-[#0B2545]">Innovation</h4>
-            <p class="text-[#234d77] text-sm mt-2">Continuously evolving with digital trends.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Footer Actions -->
-      <div class="flex flex-wrap justify-center gap-4">
-        <NuxtLink to="/search" class="px-8 py-3 bg-[#01ACF2] text-white rounded-xl font-bold hover:bg-[#0196d9] transition-all shadow-lg">Explore Books</NuxtLink>
-        <NuxtLink to="/" class="px-8 py-3 bg-white text-[#1b4f82] border border-[#01ACF2] rounded-xl font-bold hover:bg-[#EAF9FF] transition-all">Back to Home</NuxtLink>
-      </div>
-    </div>
+    </section>
   </div>
 </template>
 
 <script setup>
-import heroImage from '~/assets/images/library12.jpg'
-import bgImage from '~/assets/images/library2.avif'
+import campusImage from '~/assets/images/library11.jpg'
+
+const purposeCards = [
+  {
+    title: 'Our Mission',
+    icon: '◎',
+    description:
+      'To provide quality education, generate impactful research, and serve society through innovation, community engagement, and sustainable development.'
+  },
+  {
+    title: 'Our Vision',
+    icon: '◉',
+    description:
+      'To be a nationally and internationally recognized university for excellence in education, research, innovation, and community service.'
+  },
+  {
+    title: 'Our Core Values',
+    icon: '◇',
+    description:
+      'Academic excellence, integrity, innovation, service to society, diversity and inclusion, and accountability guide our work.'
+  }
+]
 </script>
 
 <style scoped>
-.hero-section {
-  background: linear-gradient(135deg, rgba(1, 172, 242, 0.88), rgba(148, 214, 255, 0.8)), v-bind('`url(${bgImage})`');
-  background-size: cover;
+.about-hero {
+  background-image: url('~/assets/images/library2.avif');
   background-position: center;
-  background-attachment: fixed;
+  background-size: cover;
 }
 </style>

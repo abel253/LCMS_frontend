@@ -2,10 +2,10 @@
   <header class="relative w-full z-50 bg-[#01ACF2] shadow-xl border-b border-[#01ACF2]">
     
     <!-- DESKTOP HEADER -->
-    <div class="hidden lg:block container-custom relative h-[100px] xl:h-[110px]">
+    <div class="hidden lg:block container-custom relative h-[84px] xl:h-[92px]">
       
       <!-- Top Utilities Row -->
-      <div class="flex justify-end items-center pt-2 pb-1 text-[#0B2545] text-[11px] xl:text-xs font-medium gap-2 xl:gap-3 tracking-wide relative z-20">
+      <div class="flex justify-end items-center pt-1 pb-1 text-[#0B2545] text-[10px] xl:text-[11px] font-medium gap-2 xl:gap-3 tracking-wide relative z-20">
         <!-- Search Bar -->
         <div class="relative mr-2 xl:mr-4">
           <input type="text" placeholder="Search..." 
@@ -37,24 +37,24 @@
       </div>
 
       <!-- Logo and University Name -->
-      <div class="absolute left-0 top-3 flex items-start z-20">
+      <div class="absolute left-0 top-2 flex items-start z-20">
         <!-- Diamond Logo Wrapper -->
-        <div class="relative w-20 h-20 xl:w-24 xl:h-24 flex items-center justify-center mr-4 xl:mr-5">
-          <div class="w-14 h-14 xl:w-16 xl:h-16 bg-white rotate-45 overflow-hidden border-[2px] border-[#5BC0EB] shadow-lg flex items-center justify-center">
+        <div class="relative w-16 h-16 xl:w-20 xl:h-20 flex items-center justify-center mr-3 xl:mr-4">
+          <div class="w-12 h-12 xl:w-14 xl:h-14 bg-white rotate-45 overflow-hidden flex items-center justify-center">
              <img src="~/assets/images/maus.jpg" class="w-[140%] h-[140%] -rotate-45 object-contain" alt="MAU Logo" />
           </div>
         </div>
         
         <!-- Text -->
-        <div class="pt-0.5 xl:pt-1">
-          <h1 class="text-[#0B2545] text-xl xl:text-2xl font-serif font-bold tracking-wide shadow-sm leading-tight">Mekdela Amba University</h1>
-          <h2 class="text-[#275d8e] text-sm xl:text-base font-bold mt-0.5 font-serif tracking-wider shadow-sm">መቅደላ አምባ ዩኒቨርሲቲ</h2>
+        <div class="pt-1">
+          <h1 class="text-[#0B2545] text-lg xl:text-xl font-serif font-bold tracking-wide shadow-sm leading-tight">Mekdela Amba University</h1>
+          <h2 class="text-[#275d8e] text-xs xl:text-sm font-bold mt-0.5 font-serif tracking-wider shadow-sm">መቅደላ አምባ ዩኒቨርሲቲ</h2>
         </div>
       </div>
     </div>
 
     <!-- DESKTOP BOTTOM WHITE NAV BAR -->
-    <div class="hidden lg:block absolute bottom-0 right-0 h-10 xl:h-11 bg-white/90 shadow-lg z-10 w-[70%] xl:w-[75%]" 
+    <div class="hidden lg:block absolute bottom-0 right-0 h-8 xl:h-9 bg-white/90 shadow-lg z-10 w-[70%] xl:w-[75%]" 
          style="clip-path: polygon(25px 0, 100% 0, 100% 100%, 0 100%);">
       <div class="w-full h-full pl-8 xl:pl-12 pr-4 xl:pr-6">
         <ul class="flex items-center justify-between w-full h-full text-[#0B2545] font-bold text-[11px] xl:text-xs">
@@ -75,14 +75,14 @@
 
     <!-- MOBILE HEADER -->
     <div class="lg:hidden bg-[#01ACF2] border-b border-[#01ACF2]">
-      <div class="container-custom flex items-center justify-between h-20">
-        <NuxtLink to="/" class="flex items-center gap-3">
-          <div class="w-12 h-12 bg-white rotate-45 overflow-hidden border-2 border-[#5BC0EB] flex items-center justify-center">
+      <div class="container-custom flex items-center justify-between h-16">
+        <NuxtLink to="/" class="flex items-center gap-2.5">
+          <div class="w-10 h-10 bg-white rotate-45 overflow-hidden flex items-center justify-center">
              <img src="~/assets/images/maus.jpg" class="w-[140%] h-[140%] -rotate-45 object-contain" alt="MAU Logo" />
           </div>
           <div>
-            <span class="block text-[#0B2545] font-serif font-bold text-lg leading-tight">Mekdela Amba</span>
-            <span class="block text-[#275d8e] font-serif text-sm">ዩኒቨርሲቲ</span>
+            <span class="block text-[#0B2545] font-serif font-bold text-base leading-tight">Mekdela Amba</span>
+            <span class="block text-[#275d8e] font-serif text-xs">ዩኒቨርሲቲ</span>
           </div>
         </NuxtLink>
         <button @click="isMobileMenuOpen = !isMobileMenuOpen" class="p-2 text-[#0B2545]">
